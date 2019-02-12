@@ -10,38 +10,66 @@
 </head>
 <body>
 
-<div class="container">
-  <nav class="navbar navbar-default">
+<div class="container-fluid">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
       <a class="navbar-brand" href="index.html">Vaskeriet</a>
     </div>
+	<div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
       <li><a href="billeder.html">Billeder</a></li>
       <li><a href="presse.html">Presseomtale</a></li>
 	  <li><a href="foredrag.html">Book et foredrag</a></li>
 	  <li><a href="map.html">Kom på besøg</a></li>
     </ul>
+	</div>
   </div>
 </nav>
+</div>
 
-<div class="row">
+<div class="container" style="margin-top:50px">
   <div class="col-sm-8">
-  <h1>Book et foredrag<br><small>Lær mere om Vaskeriets arbejde</small></h1>
-	<p>Her kan vi lave en mailformular.</p>
+  <h1>Book et foredrag</h1>
+	<p>Pia og Katrine fra Vaskeriet kan bookes til foredrag. Send os en mail herfra.</p>
+	<form action="/action_page.php">
+	<div class="form-group">
+    <label for="name">Navn:</label>
+    <input type="name" class="form-control" id="name">
+  </div>
+  <div class="form-group">
+    <label for="phone">Telefon:</label>
+    <input type="phone" class="form-control" id="phone">
+  </div>
+  <div class="form-group">
+    <label for="email">Email addresse:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="comment">Besked:</label>
+    <textarea class="form-control" rows="5" id="comment"></textarea>
+  </div>
+  <button type="submit" class="btn btn-default">Send</button>
+</form>
   </div>
   <div class="col-sm-4">
   <h3>Priser og betaling</h3>
   <div class="list-group">
-    <a href="#" class="list-group-item">
+    <div class="list-group-item">
       <h4 class="list-group-item-heading">Folkepensionister</h4>
-      <p class="list-group-item-text">199 kr.</p>
-    </a>
-    <a href="#" class="list-group-item">
+      <p class="list-group-item-text">125 kr.</p>
+    </div>
+    <div class="list-group-item">
       <h4 class="list-group-item-heading">Sortér selv</h4>
-      <p class="list-group-item-text">125 kr for 6 kg vasketøj</p>
-    </a>
-    <a href="#" class="list-group-item">
+      <p class="list-group-item-text">199 kr for 6 kg vasketøj</p>
+    </div>
+    <div class="list-group-item">
       <h4 class="list-group-item-heading">Diverse</h4>
       <p class="list-group-item-text">Dunpude: 100 kr</p>
 	  <p class="list-group-item-text">Dundyne: 225 kr.</p>
@@ -52,26 +80,27 @@
 	  <p class="list-group-item-text">Rulning af dug, uden vask: 25 kr pr. meter</p>
 	  <br>
 	  <p class="list-group-item-text">Levering og afhentning: 45 kr.</p>
-    </a>
-	<a href="#" class="list-group-item">
+    </div>
+	<div class="list-group-item">
       <h4 class="list-group-item-heading">Betaling</h4>
-      <p class="list-group-item-text">Bankoverførsel:</p>
+      <p class="list-group-item-text"><strong>Bankoverførsel:</strong></p>
 	  <p class="list-group-item-text">Reg: 1971 Kontonr: 4390540081</p>
-	  <br>
-	  <p class="list-group-item-text">MobilePay: 94735</p>
+	  <p class="list-group-item-text"><strong>MobilePay:</strong> 94735</p>
 	  <br>
 	  <p class="list-group-item-text">Der betales ved levering.</p>
 	  <p class="list-group-item-text">Alle priser er inklusiv moms og alle afgifter.</p>
-    </a>
+    </div>
   </div>
   </div>
 </div>
+
+<div class="container-fluid">
 <div class="row">
   <div class="col-sm-12">
   <p class="text-muted text-center">Vaskeriet - en øvebane for udviklingshæmmede - Louisevej 6 8220 Brabrand - Tlf.: 42 64 19 06</p>
   </div>
   </div>
-
+</div>
 
 </body>
 </html>
